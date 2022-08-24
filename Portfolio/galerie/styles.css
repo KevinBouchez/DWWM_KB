@@ -1,0 +1,83 @@
+div.thumbnail {
+  /*width: 250px;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 88, 88, 0.2), 0 6px 20px 0 rgba(0, 88, 88, 0.19);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-caption {
+	padding:20px;
+}
+
+p {
+	margin:0;
+}
+
+.image {
+	/*display: inline-block;*/
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+  /*-webkit-filter: sepia(100%);*/
+  /* to change the cursor icon */
+  cursor: zoom-in;
+}
+
+#footer {
+	margin-bottom: 20px;
+}
+
+hr {
+	margin-top:0;
+}
+
+
+/* Resizable */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+	padding-top:70px;
+  color:#005858;
+}
+
+#top {
+	margin-bottom: 20px;
+}
+
+.navbar-inverse {
+	background: #005858;
+	/*opacity: 0.8;	*/
+}
+
+.jumbotron {
+	color:#005858;
+	background:#eafaea;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFF;
+}
+
+/*Footer INFO*/
+
+#footer {
+	text-align: center;
+}
+
+.logo {
+	width: 25px;
+}
+
+.row-footer {
+	background:#eafaea;
+	border-radius: 10px;
+  margin: 15px;
+}
