@@ -1,0 +1,278 @@
+/* =====================================*/
+/*            BOOTSTRAP STYLES          */
+h1 {
+	font-size: 2.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h1,
+h5 {
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+}
+/* ====================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI";
+	color: #212529;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	overflow-y: scroll; /*To always have the scrollbar*/
+
+	background: #b4cdb4;
+	background: linear-gradient(to left, #777777, #353535);
+}
+
+h1 {
+	align-self: center;
+	margin: 30px 0 15px 0;
+	font-family: "Lemonada", cursive;
+	text-align: center;
+
+	color: rgb(0, 0, 0, 0.8);
+}
+
+.pokemon-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/*Both these lines are only useful for the loader*/
+	height: 100%;
+	align-items: center;
+}
+
+/* ============================ */
+/* CARD STYLING BEGINS HERE */
+/* =========================== */
+.pc-container {
+	margin: 20px;
+}
+
+.pokemon-card {
+	position: relative;
+	height: 300px;
+	width: 185px;
+
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	border-radius: 20px;
+
+	transition: transform 1.5s;
+	transform-style: preserve-3d;
+}
+
+.pc-container:hover .pokemon-card {
+	transform: rotateY(0.5turn);
+	cursor: pointer;
+}
+
+.card_front {
+	z-index: -2;
+}
+
+.card_back,
+.card_front {
+	position: absolute;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 20px;
+	border: 4px solid #fff;
+	backface-visibility: hidden;
+	/* transform-style: preserve-3d; */
+}
+
+.card_back {
+	transform: rotateY(0.5turn);
+	background-color: #464646;
+	color: white;
+	border: 4px solid #464646;
+}
+
+.poke-stats-name {
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+
+.poke-stats-bar {
+	width: 70%;
+	height: 8px;
+	margin-bottom: 15px;
+	/* border: 1px solid black; */
+}
+
+/* ============================ */
+/* CARD STYLING ENDS HERE */
+/* =========================== */
+
+.poke-id {
+	margin-top: 10px;
+	border-radius: 20px;
+	padding: 3px 10px;
+	font-size: 1.1rem;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+img {
+	width: 70%;
+}
+
+.circle {
+	padding: 65px;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	top: 6%;
+	z-index: -1;
+}
+
+.poke-name {
+	font-weight: bold;
+	text-align: center;
+}
+
+.loader {
+	border: 10px solid rgb(0, 0, 0, 0.4);
+	border-radius: 50%;
+	border-top: 10px solid transparent;
+	height: 65px;
+	width: 65px;
+
+	animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+body {
+	position: relative;
+}
+
+.github-container {
+	position: fixed;
+
+	height: 150px;
+	width: 150px;
+
+	background-color: rgb(33, 37, 41, 0.8);
+
+	right: -75px;
+	top: -75px;
+	transform: rotate(45deg);
+}
+
+.github-logo {
+	color: #fffafa;
+	position: fixed;
+	font-size: 2.5rem;
+	right: 10px;
+	top: 10px;
+	transform: rotate(45deg);
+}
+
+.search-box-container {
+	align-self: center;
+	width: 50%;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.search-box {
+	width: 100%;
+	border: none;
+	background: transparent;
+	outline: none;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border-bottom: 3px solid rgb(0, 0, 0, 0.9);
+	padding-bottom: 5px;
+}
+
+.fa-search {
+	border-bottom: 3px solid rgb(0, 0, 0, 0.9);
+	color: rgb(0, 0, 0, 0.9);
+}
+
+.search-box:focus {
+	border-bottom: 3px solid limegreen;
+}
+
+.search-box:focus + .fa-search {
+	border-bottom: 3px solid limegreen;
+	color: limegreen;
+}
+
+.button-container {
+	align-self: center;
+	margin-bottom: 15px;
+
+	display: flex;
+	align-items: center;
+}
+
+.button-container button {
+	background: transparent;
+	color: #464646;
+	border: none;
+	outline: none;
+	font-size: 1.3rem;
+	height: 30px;
+	width: 30px;
+	border: 3px solid #464646;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+.button-container button i {
+	pointer-events: none;
+}
+
+/* .button-container button:hover {
+  cursor: pointer;
+} */
+
+.button-container .pagination {
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 2px;
+	font-weight: bold;
+	transition: all 0.2s;
+	user-select: none;
+}
+
+.current-page {
+	color: whitesmoke;
+	background: #464646;
+	border-radius: 3px;
+}
+
+.button-container .restrict-click {
+	color: lightgrey;
+	border: 3px solid lightgray;
+}
