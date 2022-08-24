@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="actions.php" method="post">
+    <select name="menu">
+        <option value="civilite">Civilités</option>
+        <option value="monsieur">Monsieur</option>
+        <option value="madame">Madame</option>
+    </select>
+    
+    <p>NOM : <input type="text" name="nom" placeholder="Nom"/>
+    PRENOM : <input type="text" name="prenom" placeholder="Prénom"/>
+    AGE : <input type="text" name="age" placeholder="Age"/><br/></p>
+    
+    <p>ADRESSE : <input type="text" name="adresse" placeholder="Adresse"/>
+    VILLE : <input type="text" name="ville" placeholder="Ville"/>
+    CODE POSTALE : <input type="text" name="cp" placeholder="Code Postale"/><br/></p>
+
+    <p>EMAIL : <input type="text" name="email" placeholder="Email"/>
+    TELEPHONE : <input type="text" name="tel" placeholder="Téléphone"/><br/></p>
+
+     
+    <p>SITUATION : <input type="radio" name="celib" value="Celibataire"> Celibataire
+                   <input type="radio" name="celib" value="En couple"> En Couple</p> 
+
+    Quelle langue parle tu ?
+                <p><input type="radio" id="Français" name="fr" value="Français"> FR 
+                   <input type="radio" id="Anglais" name="en" value="Anglais"> EN</p>
+
+    Aime tu le poisson ?
+    <p><input type="radio" name="poisson" value="Oui"> Oui <input type="radio" name="poisson" value="Non"> Non</p>  
+    
+    <p><input type="submit" value="Validé"/> <input type="reset" value="Reset"></p>
+    
+
+    </form>
+    
+</body>
+</html>

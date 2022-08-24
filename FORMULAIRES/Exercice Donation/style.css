@@ -1,0 +1,67 @@
+body{
+    background-image: url(../Exercice\ Donation/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    margin: 0%;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(0, 174, 255, 0.4);
+}
+
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    background-color: rgb(0, 100, 8);
+    opacity: 80%;
+    width: 400px;
+    height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+p{
+    padding-top: 5%;
+    padding-left: 40px;
+}
+
+.btn{
+    height: 60px;
+    width: 320px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(17, 255, 0);
+    
+}
+
+.zonetext1{
+    width: 250px;
+    margin-left: 20px;
+}
+.zonetext2{
+    width: 250px;
+    margin-left: 25px;
+}
+.zonetext3{
+    width: 250px;
+    margin-left: 9px;
+}
+.zonetext4{
+    width: 250px;
+    margin-left: 25px;
+}

@@ -1,0 +1,32 @@
+body{
+    background-image: url(../Exercice\ Donation/bg.jpeg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.div1{
+    background-color: rgba(0, 100, 8, 0.355);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+h1{
+    color: white;
+    font-size: 68px;
+    text-align: center;
+}
+
+img{
+    width: 450px;
+    height: 300px;
+}
+.img1{
+    display: flex;
+    justify-content: center;
+}
+

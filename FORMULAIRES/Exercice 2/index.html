@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="actions.php" method="post">
+    <p><input type="text" name="nombre1" placeholder="Premier Nombre"/><br/></p>
+    <p><input type="text" name="nombre2" placeholder="Deuxieme Nombre"/><br/></p>
+    <select name="menu" onchange="form.sumbit">
+        <option value="add">addition</option>
+        <option value="sous">soustraction</option>
+        <option value="divi">division</option>
+        <option value="multi">multiplication</option>
+    </select>
+
+    <p><input type="submit" value="Total"/> <input type="reset" value="Reset"></p>
+    
+
+    </form>
+    
+</body>
+</html>
