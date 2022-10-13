@@ -1,0 +1,135 @@
+.link {
+    position: absolute;
+    top:110px ;
+    left: 20px;
+    background-image: linear-gradient(to right , #000000 ,#2d2d2d);
+    text-decoration: 0;
+    padding: 10px 25px;
+    border-radius: 6px;
+    color: #fff;
+    
+}
+.link:hover {
+    position: absolute;
+    top:110px ;
+    left: 20px;
+    background-image: linear-gradient(to right , #007406 ,#073100);
+    text-decoration: 0;
+    padding: 10px 25px;
+    border-radius: 6px;
+    color: #fff;
+    
+}
+
+.error {
+    color: rgb(236,90,90);
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+    animation: anime 0.5s ease-out;
+    margin-bottom: 20px;
+}
+/*Error animation*/
+@keyframes anime {
+    from {
+        transform: translateY(-50px);
+    }
+}
+form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 6px;
+    width: 350px;
+}
+.form-log {
+    background-color: rgba(255, 255, 255, 0.632);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 6px;
+    width: 350px;
+}
+label {
+    margin-bottom: 10px;
+}
+::-webkit-file-upload-button {
+    background-image: linear-gradient(to right , #000000 ,#2d2d2d);
+    padding: 5px 25px;
+    color: #fff;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+}
+input , textarea {
+    margin-bottom: 7px;
+    padding: 10px;
+    resize: none;
+    outline: 0;
+    border-radius: 6px;
+}
+input[type='file']{
+    padding: 10px 0;
+}
+input[type="submit"]{
+    margin-bottom: 0;
+    background-image: linear-gradient(to right , #000000 ,#2d2d2d);
+   color: #fff;
+   border: 0;
+
+}
+
+/*Liste CSS*/
+
+.event{
+   margin-top: 100px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit , 20rem);
+   justify-content: center;
+   padding: 20px;
+   margin-bottom: 50px;
+   width: 100%;
+   gap: 20px;
+}
+
+.box {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.box:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.img_principal {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    border-radius: 6px;
+}
+.delete_btn {
+    position: absolute;
+    top: 0px;
+    left: 3px;
+}
+.delete_btn img {
+   width: 20px;
+   height: 20px;
+}
+.box div {
+    font-size: 13px;
+    margin-top: 10px;
+}
+.vide_message {
+    font-size: 15px;
+    color:#fff;
+}
