@@ -89,6 +89,26 @@ h2 {
   text-align: center;
 }
 
+.btn-payer{
+  text-align: center;
+  text-decoration: 0;
+  background-color: #000000;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 10px 10%;
+  border-radius: 6px;
+}
+
+.btn-payer:hover{
+  text-align: center;
+  text-decoration: 0;
+  background-color: #005b08;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 10px  10%;
+  border-radius: 6px;
+}
+
 a,
 a:hover,
 a:focus {
@@ -209,6 +229,7 @@ a:focus {
 
 .navbar-brand {
   font-family: 'Dancing Script', cursive;
+  margin-left: 8%;
 }
 
 .navbar-brand span {
@@ -217,8 +238,19 @@ a:focus {
   color: #ffffff;
 }
 
+.navbar-brandd {
+  font-family: 'Dancing Script', cursive;
+  margin-left: 5%;
+}
+
+.navbar-brandd span {
+  font-weight: bold;
+  font-size: 32px;
+  color: #ffffff;
+}
+
 .custom_nav-container {
-  padding: 0;
+  padding: 0%;
 }
 
 .custom_nav-container .navbar-nav {

@@ -82,7 +82,7 @@
               <a href="./connexion.php" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
-              <a class="cart_link" href="#">
+              <a class="cart_link" href="./panier.php">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
@@ -153,15 +153,16 @@
                     <td><?=$_SESSION['UG-Site'][$product['id']] // Quantité?></td>
                     <td><a href="panier.php?del=<?=$product['id']?>"><img src="./delete.png"></a></td>
                 </tr>
+                
 
             <?php endforeach ;} ?>
 
             <tr class="total">
                 <th>Total : <?=$total?>€</th>
             </tr>
+            <a class="btn-payer" href="./payment.php">Payer</a>
         </table>
         </section>
-        <a href="./payment.php">Payer</a>
         </div>
   <!-- end book section -->
 
